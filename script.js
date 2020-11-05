@@ -179,7 +179,7 @@ function detectCollision(obs) {
       //console.log('collision!')
       cancelAnimationFrame(animationId)
       alert(`-They got you solder but your battle was faught bravely!  -You took down ${score} of those fighter ships! -We still have to clean up your mess. ${survive} of those aliens slipped right by you. `  )
-      
+      window.location.reload()
       //window.location.reload()
     }
   }
