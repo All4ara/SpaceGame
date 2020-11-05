@@ -2,7 +2,7 @@ const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
 
 canvas.width = 360
-canvas.height = 700
+canvas.height = 600
 
 const background = new Image()
 background.src = `images/planet2.jpeg`
@@ -178,7 +178,7 @@ function detectCollision(obs) {
       // collision detected!
       //console.log('collision!')
       cancelAnimationFrame(animationId)
-      alert(`-They got you solder but your battle was faught bravely! ---------- -You took down ${score} of those slimy bastards!------------------------ -We still have to clean up your mess.----------------------------- -${survive} of those basterds slipped right by you. ------------------------`  )
+      alert(`-They got you solder but your battle was faught bravely!  -You took down ${score} of those fighter ships! -We still have to clean up your mess. ${survive} of those aliens slipped right by you. `  )
       
       //window.location.reload()
     }
