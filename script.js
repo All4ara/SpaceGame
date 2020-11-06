@@ -2,7 +2,7 @@ const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
 
 canvas.width = 360
-canvas.height = 600
+canvas.height = 550
 
 const background = new Image()
 background.src = `images/planet2.jpeg`
@@ -22,8 +22,8 @@ enemies.src = 'images/enemy.png'
 let space = { x: 0, y: 0, w: canvas.width, h: canvas.height }
 
 let ship = { 
-    x: (canvas.width / 2)-50, 
-    y: (canvas.height - 160), 
+    x: (canvas.width / 2)-40, 
+    y: (canvas.height - 100), 
     w: 70, 
     h: 80, 
     
@@ -73,7 +73,7 @@ function shootGun() {
     console.log('shoot')
     //Make a new bullet when we shoot 
     let bullet = {
-      x: ship.x+20, 
+      x: ship.x+10, 
       y: (ship.y +35), 
       w: 10, 
       h: 20
@@ -96,7 +96,7 @@ function shootNuke() {
     console.log('shoot nuke')
     //Make a new bullet when we shoot 
     let nuke = {
-      x: ship.x+70, 
+      x: ship.x+50, 
       y: (ship.y +35), 
       w: 10, 
       h: 20
@@ -111,7 +111,24 @@ function drawNukes() {
       ctx.fillStyle = 'silver'
       ctx.drawImage(weapon2, nuke.x, nuke.y, nuke.w, nuke.h)
     }
-  }
+}
+
+let left = document.querySelector('.left')
+left.onclick = function (e){
+    ship.x -= 5
+}
+
+let right = document.querySelector('.right')
+right.onclick = function (e){
+    ship.x += 5
+}
+
+let shoot = document.querySelector('.shoot')
+shoot.onclick = function (e){
+    shootGun()
+}
+
+
 
 
 window.onkeydown = function (event) {
@@ -129,7 +146,7 @@ window.onkeydown = function (event) {
       case 'ArrowDown':
         ship.y += 10
         break;
-      case 'ontouchmove':
+      case ' ':
         shootGun()
         break;
       case 'n':
