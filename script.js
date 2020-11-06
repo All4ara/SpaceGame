@@ -195,7 +195,7 @@ function detectCollision(obs) {
       // collision detected!
       //console.log('collision!')
       cancelAnimationFrame(animationId)
-      alert(`-They got you solder but your battle was faught bravely!  -You took down ${score} of those fighter ships! -We still have to clean up your mess. ${survive} of those aliens slipped right by you. `  )
+      alert(`-They got you soldier but your battle was fought bravely!  -You took down ${score} of those fighter ships! -We still have to clean up your mess. ${survive} of those aliens slipped right by you. `  )
       window.location.reload()
       //window.location.reload()
     }
