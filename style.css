@@ -1,5 +1,5 @@
 body{
-    overflow: hidden;
+    
     background-color: rgb(33, 33, 33);
     
 }
@@ -7,14 +7,14 @@ div#buttons{
     display: flex;
     justify-content: space-evenly;
     padding: .5rem;
-    overflow: hidden;
+    
     
     
 }
 .left,
 .right,
 .shoot {
-    overflow: hidden;
+    
     padding: 1rem 2rem;
     color: aqua;
     background-color: black;
