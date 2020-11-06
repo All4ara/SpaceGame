@@ -1,7 +1,7 @@
 const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
 
-canvas.width = 360
+canvas.width = window.innerWidth -15 
 canvas.height = 500
 
 const background = new Image()
