@@ -129,7 +129,7 @@ window.onkeydown = function (event) {
       case 'ArrowDown':
         ship.y += 10
         break;
-      case ' ':
+      case 'ontouchmove':
         shootGun()
         break;
       case 'n':
