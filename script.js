@@ -2,7 +2,7 @@ const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
 
 canvas.width = window.innerWidth -15 
-canvas.height = 500
+canvas.height = 550
 
 const background = new Image()
 background.src = `images/planet2.jpeg`
