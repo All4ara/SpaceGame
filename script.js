@@ -115,12 +115,12 @@ function drawNukes() {
 
 let left = document.querySelector('.left')
 left.onclick = function (e){
-    ship.x -= 5
+    ship.x -= 10
 }
 
 let right = document.querySelector('.right')
 right.onclick = function (e){
-    ship.x += 5
+    ship.x += 10
 }
 
 let shoot = document.querySelector('.shoot')
